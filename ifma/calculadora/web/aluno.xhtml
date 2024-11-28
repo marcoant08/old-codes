@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+        <ui:decorate template="telaprincipal.xhtml">
+        <ui:define name="centr">
+            <p:fieldset legend="Novo Aluno" toggleable="true">
+        <center>
+            <h:form id="frm">
+                <p:growl id="growl"/>
+                <p:panel style="margin-top: 160px; width: 435px;" header="Cadastro de Alunos MAPARO :)">
+                    <p:panelGrid columns="2" id="grid">
+                        <h:outputText value="Nome:" />
+                        <p:inputText value="#{controllerCalc.cl.nome}" required="true" requiredMessage="Campo Obrigatório"/>
+                        <h:outputText value="Endereco:" />
+                        <p:inputText value="#{controllerCalc.cl.endereco}"/>
+                        <h:outputText value="E-Mail:" />
+                        <p:inputText value="#{controllerCalc.cl.email}"/>
+                        <h:outputText value="RG:" />
+                        <p:inputText value="#{controllerCalc.cl.rg}"/>
+                        <h:outputText value="Fone:" />
+                        <p:inputText value="#{controllerCalc.cl.fone}"/>
+                        <h:outputText value="CPF:" />
+                        <p:inputText value="#{controllerCalc.cl.cpf}"/>
+                        <h:outputText value="Celular:" />
+                        <p:inputText value="#{controllerCalc.cl.celular1}"/>
+                    </p:panelGrid>
+                    <p:separator style="width: 60%; height: 1px;"/>
+                    <p:commandButton value="Limpar" action="#{controllerCalc.limpar()}" ajax="false"/>
+                    <p:commandButton value="Salvar" action="#{controllerCalc.salvar()}" ajax="false"/>
+                    <p:separator style="width: 40%; height: 1px;"/>
+                </p:panel>
+            </h:form>
+        </center>
+            </p:fieldset>
+        </ui:define>
+        </ui:decorate>
+    
+</html>
+

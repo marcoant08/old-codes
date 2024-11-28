@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NewProject</string>
+    <string name="BemVindo">Bem-Vindo ao primeiro projeto ANDROID do Marco Antônio!</string><string name="action_settings">Settings</string>
+    
+    <string name="bttelacalc">Calcular IMC</string>
+    <string name="btcalcular">Calcular</string>
+    <string name="btvoltar">Voltar</string>
+    <string name="peso"/>
+    <string name="altura"/>
+    <string name="btlimpar">Limpar Campos</string>
+    <string name="bttelac">Calculadora</string>
+
+</resources>

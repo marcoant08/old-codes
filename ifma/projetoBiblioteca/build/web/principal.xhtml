@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Sistema Bibliotecário</title>
+    </h:head>
+    <h:body>
+        <center>
+            <h:form>
+            <p:layout  style="min-width: 300px; min-height: 840px; width: 1500px">
+                <center><p:layoutUnit position="north" header="Sistema Bibliotecário">
+                        <p:commandLink value="Sair" action="login.jsf" style="margin-left: 1445px; width: 85%"/>
+                </p:layoutUnit></center>
+                <p:layoutUnit position="west" resizable="true" size="200" minSize="100" maxSize="200">
+                    
+                    <p:panelMenu style="width:180px">
+                        <p:submenu label="Cadastro">
+                            <p:menuitem value="Cadastrar" action="index" ajax="false" icon="ui-icon-circle-plus"/>
+                        </p:submenu>
+                        <p:submenu label="Ferramentas">
+                            <p:menuitem value="Alunos Cadastrados"  action="lista" ajax="false" icon="ui-icon-circle-plus"/>
+                        </p:submenu>
+                        <p:submenu label="Mais">
+                            <p:menuitem value="Home Page"  action="principal" ajax="false" icon="ui-icon-circle-plus"/>
+                        </p:submenu>
+                    </p:panelMenu>
+                    
+                </p:layoutUnit>
+                <p:layoutUnit position="center">
+                    <ui:insert name="centr">
+                        <center><br/><br/><br/><br/><font face="Berlin Sans FB" color="black" size="300">IFMA</font></center><br/>
+                    </ui:insert>
+                </p:layoutUnit>
+                
+                <p:layoutUnit position="east" resizable="true" size="100" minSize="40" maxSize="200">
+                    <center><br/><font color="gray"><h1>B<br/>I<br/>B<br/>L<br/>I<br/>O<br/>T<br/>E<br/>C<br/>A<br/>•<br/>•<br/>•</h1></font></center><br/>
+                </p:layoutUnit>
+                
+                <p:layoutUnit position="south">
+                    
+                </p:layoutUnit>
+            </p:layout>                
+        </h:form>
+        </center>
+    </h:body>
+</html>
+

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+        <ui:decorate template="telaprincipal.xhtml">
+        <ui:define name="centro">
+            <p:fieldset legend="Calcular" toggleable="true">
+        <center>
+                <p:panel style="margin-top: 160px; width: 435px;" footer="Calculadora do MA" header="Calculadora do MA :)">
+                    <p:panelGrid columns="2">
+                        <h:outputText value="Primeiro Numero:" />
+                        <p:inputText value="#{controllerCalc.calc1.num1}"/>
+                        <h:outputText value="Segundo Numero:" />
+                        <p:inputText value="#{controllerCalc.calc1.num2}"/>
+                        <p:commandButton value="Somar" action="#{controllerCalc.soma()}" ajax="false"/>
+                        <p:commandButton value="Subtrair" action="#{controllerCalc.sub()}" ajax="false"/>
+                        <p:commandButton value="Multiplicar" action="#{controllerCalc.multi()}" ajax="false"/>
+                        <p:commandButton value="Dividir" action="#{controllerCalc.divi()}" ajax="false"/>
+                        <p:commandButton value="Limpar" action="#{controllerCalc.limpar()}" ajax="false"/>
+                        <h:outputText value="Resultado: #{controllerCalc.calc1.result}"/>
+                    </p:panelGrid>
+                </p:panel>
+        </center>
+                </p:fieldset>
+        </ui:define>
+        </ui:decorate>
+</html>
+

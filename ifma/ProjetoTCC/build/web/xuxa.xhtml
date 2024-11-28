@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <ui:decorate template="principal.xhtml">
+    <ui:define name="centr">
+        <center>
+            <h:form id="frm">
+                <p:growl id="growl"/>
+                    <p:panel style="width: 660px;" header="Xuxa Só Para Baixinhos">
+                        <img src="imagens/imgmusicas/xuxa.jpg" width="420" height="420" alt="xuxa"/>
+                        <p:separator style="width: 60%; height: 1px;"/>
+                        <p:panelGrid columns="2" id="grid">
+                            <h:outputText value="01. Batatinha Bem Quentinha" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/01.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="02. Trenzinho" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/02.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="03. Atravessar A Rua" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/03.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="04. Quack Quack" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/04.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="05. Vamos Dizer Alô" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/05.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="06. Dança Do Macaco" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/06.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="07. Tão Grande" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/07.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="08. Os Números" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/08.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="09. Rampa Pa Mão" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/09.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="10. Teddy, O Polvo" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/10.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="11. Shake Shake" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/11.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="12. Guto Bate Com Um Martelo" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/12.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="13. Grite E Cochile" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/13.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="14. Cinco Patinhos" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/14.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="15. Borboleta" />
+                            <audio  id="audiotag1" controls="controls" loop="loop">
+                                <source src="musicas/xuxa/15.mp3" />
+                            </audio>
+                            
+                            <h:outputText value="#{controller.animal.animal}"/>
+                        </p:panelGrid>
+                        <p:separator style="width: 40%; height: 1px;"/>
+                    </p:panel>
+                <br/>
+            </h:form>
+        </center>
+            </ui:define>
+   </ui:decorate>
+</html>

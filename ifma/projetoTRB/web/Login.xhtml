@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Login</title>
+    </h:head>
+    <h:body>
+       <center>
+                <h:form>
+                    <p:panel footer="www.MVC.com.br" header="Login" style="margin-top: 160px; width:400px">
+                        <h:panelGrid columns="2">
+            
+                                <h:outputText value="Usuário:" title="Digite seu nome de Usuario"/>
+                                <p:inputText value="#{clienteBean.log.usuario}"/>
+                                <h:outputText value="Senha:"/>
+                                <p:password value="#{clienteBean.log.senha}"/>
+
+                                <h:commandButton value="Acessar" action="#{clienteBean.login()}"/>
+                                <h:commandButton value="Cancelar" action="Login"/>
+                
+                        </h:panelGrid>
+                     </p:panel>
+                </h:form>
+        </center>
+    </h:body>
+</html>
+

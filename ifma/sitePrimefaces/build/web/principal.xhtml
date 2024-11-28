@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Protótipo</title>
+        <link rel="icon" type="image/gif" href="livros.gif" />
+    </h:head>
+    <h:body>
+        <center>
+            <h:form>
+            <p:layout style="min-width: 300px; min-height: 840px; width: 1800px">
+                <p:layoutUnit position="north">
+                    <font face="Shruti" color="23081730" size="30">Mundo Infantil</font>
+                </p:layoutUnit>
+                <p:layoutUnit position="west" resizable="true" size="200" minSize="100" maxSize="200">
+                    
+                    <p:panelMenu style="width:180px">
+                        <p:submenu label="Menu">
+                            <p:menuitem value="Tutano" action="index" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Tomarina" action="funcionario" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Caquí" action="livro" ajax="false" icon="ui-icon-circle-plus"/>
+                        </p:submenu>
+                    </p:panelMenu>
+                    
+                </p:layoutUnit>
+                <p:layoutUnit position="center">
+                    <p:commandButton value="Arroz" style="width: 300px"/>
+                    <p:commandButton value="Feijão" style="width: 300px"/>
+                    <p:commandButton value="Tutano" style="width: 300px"/>
+                    <p:commandButton value="Queijo" style="width: 300px"/>
+                    <p:commandButton value="Pizza" style="width: 300px"/>
+                    
+                        <p:separator style="width: 60%; height: 1px;"/>
+                        <p:panelGrid columns="2" id="grid">
+                            <h:outputText value="Sobre:" />
+                            <h:outputText value="Este site é uma homenagem do Marco Antônio à todas as crianças do mundo :D" />
+                        </p:panelGrid>
+                        <p:separator style="width: 40%; height: 1px;"/>
+                        
+                    <img src="img/principal.jpg" width="800" height="600" alt="principal"/>
+                    
+                </p:layoutUnit>
+            </p:layout>                
+        </h:form>
+        </center>
+    </h:body>
+</html>
+

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Novo</title>
+    </h:head>
+     <h:body> 
+        <h:form> 
+            <h:panelGrid columns="2"> 
+                <h:outputText value="Nome" /> 
+                <h:inputText value="#{clienteBean.cliente.NOME}" /> 
+                <h:outputText value="Telefone" /> 
+                <h:inputText value="#{clienteBean.cliente.TELEFONE}" /> 
+                <h:outputText value="Celular:" /> 
+                <h:inputText value="#{clienteBean.cliente.CELULAR}" /> 
+                <h:outputText value="Email:" /> 
+                <h:inputText value="#{clienteBean.cliente.EMAIL}" /> 
+                <h:outputText value="Endereço:" /> 
+                <h:inputText value="#{clienteBean.cliente.ENDERECO}" /> 
+                <h:outputText value="Matricula:" /> 
+                <h:inputText value="#{clienteBean.cliente.MATRICULA}" /> 
+                <h:outputText value="Sexo:" /> 
+                <h:inputText value="#{clienteBean.cliente.SEXO}" /> 
+                <h:outputText value="Cidade:" /> 
+                <h:inputText value="#{clienteBean.cliente.CIDADE}" />
+                <h:outputText value="UF:" /> 
+                <h:inputText value="#{clienteBean.cliente.UF}" />
+                <h:outputText value="CPF:" /> 
+                <h:inputText value="#{clienteBean.cliente.cpf}" /> 
+                
+                
+                <h:commandButton action="#{clienteBean.inserir()}" value="Inserir" />
+                <h:commandButton action="#{clienteBean.alterar()}" value="Alterar" />
+                <h:commandButton action="#{clienteBean.remover()}" value="Remover" />
+                <h:commandButton action="clientes" immediate="true" value="Cancelar" />
+            </h:panelGrid> 
+        </h:form> 
+    </h:body>
+</html>
+

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+     <h:head>
+        <title>Mundo Infantil</title>
+        <link rel="icon" type="image/jpg" href="imagens/outros/logo.jpg"/>
+    </h:head>
+    <h:body>
+        <center>
+            <h:form>
+            <p:layout style="min-width: 300px; min-height: 840px; width: 1500px">
+                <p:layoutUnit position="north" header="Mundo Infantil :D">
+                    
+                    
+                </p:layoutUnit>
+                <p:layoutUnit position="west" resizable="true" size="260" minSize="100" maxSize="300">
+                    
+                    <p:panelMenu style="width:250px">
+                        <p:submenu label="Jogos">
+                            <p:menuitem value="Identificar animais" action="IdentAnimais" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Identificar cores" action="p" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Som dos animais" action="p" ajax="false" icon="ui-icon-circle-plus"/>
+                        </p:submenu>
+                        <p:submenu label="Entretenimento">
+                            <p:menuitem value="Entretenimento 1"  action="lista" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Sobre os animais"  action="listaFunc" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Entretenimento 3"  action="listaLivro" ajax="false" icon="ui-icon-circle-plus"/>
+                        </p:submenu>
+                        <p:submenu label="Músicas infantis">
+                            <p:menuitem value="XSPB (Xuxa)"  action="xuxa" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Gummy Bear"  action="gbear" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Galinha pintadinha 2"  action="gpintadinha" ajax="false" icon="ui-icon-circle-plus"/>
+                        </p:submenu>
+                        <p:submenu label="Desenhos animados">
+                            <p:menuitem value="Peppa Pig"  action="lista" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Dora: a aventureira"  action="listaFunc" ajax="false" icon="ui-icon-circle-plus"/>
+                            <p:menuitem value="Desenho 3"  action="listaLivro" ajax="false" icon="ui-icon-circle-plus"/>
+                        </p:submenu>
+                    </p:panelMenu>
+                    
+                </p:layoutUnit>
+                <p:layoutUnit position="center">
+                    <ui:insert name="centr">
+                        <img src="imagens/outros/principal.jpg" width="1100" height="656" alt="principal"/>
+                    </ui:insert>
+                </p:layoutUnit>
+                
+                <p:layoutUnit position="east" resizable="true" size="100" minSize="40" maxSize="200">
+                    
+                    
+                </p:layoutUnit>
+            </p:layout>                
+        </h:form>
+        </center>
+    </h:body>
+</html>
+
